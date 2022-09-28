@@ -70,11 +70,11 @@ create table factura(
 
 
 insert into usuario values("1192769384","1192769384","Jose Armando","Ustaris Salcedo","3023036019","joseusa192@gmail.com");
-insert into inquilino values ("INQ-3612");
-insert into usuario_inquilino values ("1192769384","INQ-3612");
+insert into arrendatario values ("INQ-3612");
+insert into usuario_arrendatario values ("1192769384","INQ-3612");
 alter table factura add (fec_expedicion date not null, fec_pago date not null, fec_pago_final date not null);
 
 drop database ADMINISTRACION;
 
 select * from factura;
-select *from usuario_inquilino;
+select *from usuario_arrendatario;
